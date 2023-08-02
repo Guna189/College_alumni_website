@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>CVR Alumini</title>
+
+        <link rel="stylesheet" type="text/css" href="main.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="landing.css" media="screen">
+        <script src="landingjs.js"></script>
+        <script>
+            function sentAlert() {
+                alert("Recieved your Response\nThank you")
+            }
+
+            var responsiveSlider = function() 
+            {  
+                var slider = document.getElementById("slider");
+                var sliderWidth = slider.offsetWidth;
+                var slideList = document.getElementById("slideWrap");
+                var count = 1;
+                var items = slideList.querySelectorAll("li").length;
+                var prev = document.getElementById("prev");
+                var next = document.getElementById("next");
+                
+                window.addEventListener('resize', function() {
+                    sliderWidth = slider.offsetWidth;
+            });
+            
+            var prevSlide = function() {
+                if(count > 1) {
+                count = count - 2;
+                slideList.style.left = "-" + count * sliderWidth + "px";
+                count++;
+                }
+                else if(count = 1) {
+                count = items - 1;
+                slideList.style.left = "-" + count * sliderWidth + "px";
+                count++;
+                }
+            };
+            
+            var nextSlide = function() {
+                if(count < items) {
+                slideList.style.left = "-" + count * sliderWidth + "px";
+                count++;
+                }
+                else if(count = items) {
+                slideList.style.left = "0px";
+                count = 1;
+                }
+            };
+            
+            next.addEventListener("click", function() {
+                nextSlide();
+            });
+            
+            prev.addEventListener("click", function() {
+                prevSlide();
+            });
+            
+            setInterval(function() {
+                nextSlide()
+            }, 5000);
+            
+            };
+            
+            window.onload = function() {
+            responsiveSlider();  
+            }
+        </script>
+    </head>
+
+    <body>
+            <header>
+                <div class="navbar">
+                    
+                    <div class="logos">
+                        <div class="logo">
+                            <!-- <h1 style="float: left;">CVR ALUMNI</h1> -->
+                            <a href="Landing.html">
+                                <img src="logo2.png" alt="CVR LOGO">
+                            </a>
+                            <div class="logo2">
+                                <img src="20years5.jpg" alt="CVR LOGO" height="70px" align=right>
+                            </div>
+                            
+                            <!-- <h1 style="float: left;">CVR ALUMNI</h1> -->
+                        </div>
+
+                    </div>
+
+                    
+                    
+                    <ul class="navlinks">
+                        <input type="checkbox" id="checkbox_toggle" />
+                        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                        <!-- <div class="sticky"> -->
+                            <div class="menu">
+                            
+                                <li><a href="events.html">Events</a></li>
+                                <li><a href="newsAndStories.html">News and Stories</a></li>
+                                <li class="community">
+                                    <a>Community ▼</a>
+                                <ul class="dropdown">
+                                    <li><a href="alumniEngagement.html">Alumni Engagement</a></li>
+                                    <li><a href="alumniChapter.html">Chapters</a></li>
+                                </ul>
+                                </li>
+                                <li><a href="illustriousAlumni.html">Illustrious Alumni</a></li>
+                                <li><a href="getInvolved.html">Get Invloved</a></li>
+                            
+                            </div>
+                        <!-- </div> -->
+                        
+                    </ul>
+
+                </div>
+                
+            </header>
+            <article>
+                <div class="stats">
+                    <marquee>
+                        <ul>
+                            <li>32423+ Alumni</li>
+                            <li>30+ Countries</li>
+                            <li>10+ Courses</li>
+                            <li>40+ Events</li>
+                            <li>30+ Scientists</li>
+                            <li>90+ Rankers</li>
+                        </ul>
+                    </marquee>
+                </div>
+            </article>
+                <div class="welcomeBox">
+                    <div id="welcomeMessage">
+                        <h1><b>WELCOME ALUMNI</b></h1>
+                        <h2>Alumni – a legacy that lasts</h2>
+                        <p>It is a matter of great pride and honour for an Educational Institute when the grandaunts spread their wings and take flight into the infinite sky of career opportunities. CVRCE displays a conviction that old students are priceless possessions and valued emissaries as they have added sheen and lustre to the glory of the institute and raised the banner of our college.</p>
+                        <a href="getInvolved.html">Get Involved &#8811;</a>
+                    </div>
+                    <div id="slider" align="center">
+                        <ul id="slideWrap"> 
+                        <li><img src="slidecollage.png" alt="Wallpaper" height="650" width="1460"></li>
+                    </ul>
+                    <a id="prev" >&#8810;</a>
+                    <a id="next" >&#8811;</a>
+                    </div>
+                </div><br/><br/><br/>
+
+                <div class="upcomingEvents">
+                    <h1><b>Upcoming Events</b></h1>
+
+                    <div class="event">
+                        <div id="eventDate">14 Apr 2022</div>
+
+                        <div id="eventDesc">
+                            <h2>Alumni Meet</h2>
+                            <p>Alumni Reunion of CVR College of Engineering at Dallas</p>
+                        </div>
+
+                        <div id="eventButton">
+                            <a href="register.html">Register</a>
+                        </div>
+                    </div>
+
+                    <div class="event">
+                        <div id="eventDate">24 May 2022</div>
+
+                        <div id="eventDesc">
+                            <h2 class="eventname">Global Excellence</h2>
+                            <p class="eventdesc">Alumni Meet of CVR College of Engineering at Fremount CA</p>
+                        </div>
+
+                        <div id="eventButton">
+                            <a href="register.html">Register</a>
+                        </div>
+                    </div>
+                    <div class="viewAll">
+                        <a href="events.html" id="viewAll">View all Events &#8811;</a>
+                    </div>
+                </div>
+
+                <div class="illustrious">
+                    <h1><b>Illustrious Alumni</b></h1>
+
+                    <div class="alumnilist">
+                        <div class="illumi1">
+                            <img src="alumni1.jfif" alt="img1" height="200" width="250">
+                            <h4>Dr Sriram Somanchi</h4>
+                            <h4>Sriram obtained his ME from IISc and received PhD from CMU.</h4>
+                            <h4>Assistant Professor, University of Notre Dame, USA.</h4>
+                            <h4>Course, 2002-06</h4>
+                        </div>
+                        <div class="illumi2">
+                            <img src="alumni2.jpg" alt="img1" height="200" width="250">
+                            <h4>Dr Santosh Tirunagari</h4>
+                            <h4>Santosh obtained his Masters from Aalto University and received PhD from University of Surrey.</h4>
+                            <h4>ML Engineer, EMBL, and Honorary Asst Prof, MDX university</h4>
+                            <h4>Course, 2005-09</h4>
+                        </div>
+                        <div class="illumi3">
+                            <img src="alumni3.jfif" alt="img1" height="200" width="250">
+                            <h4>Dr Koppu Srinivas</h4>
+                            <h4>Srini had compled his M.Tech from IIIT-A and received PhD from VIT</h4>
+                            <h4>Associate Professor in VIT</h4>
+                            <h4>Course, 2002-06</h4>
+                        </div>
+    
+                        <div class="illumi4">
+                            <img src="alumni4.jfif" alt="img1" height="200" width="250">
+                            <h4>Dr Badrinath Jagannath</h4>
+                            <h4>Badrinath obtained his MS from ASU and received PhD in Biomedical Engineering from University of Texas, Dallas.</h4>
+                            <h4>Research Scientist, Baxter Young Investigator Awardee(2021)</h4>
+                            <h4>Course, 2009-13</h4>
+                        </div>
+                    </div>
+                    <div class="viewAlumni">
+                        <a href="illustriousAlumni.html">View more &#8811;</a>
+                    </div>
+                </div>
+
+                <div class="news">
+                    <h1>News & Stories</h1>
+                    <div class="newsArticles">
+                        <table>
+                            <tr>
+                                <div class="article1">
+                                    <img src=news1.png alt='News&Article' height="220" width="400">
+                                    <h4><b>7th May 2021</b></h4>
+                                    <h2><b>Private engineering colleges witness jump in campus placement</b></h2>
+                                    <p><br>There is a huge demand for students who are trained  and certified in resources such as Full Stack ,JAVA, Salesforce ,Font-end engineering etc. <br></p>
+                                    <a href="newsAndStories.html" class="ReadMore">Read More &#8811;</a>
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="article2">
+                                    <img src=alumeet.jpg alt='News&Article' height="220" width="400">
+                                    <h4><b>7th May 2021</b></h4>
+                                    <h2><b>Private engineering colleges witness jump in campus placement</b></h2>
+                                    <p><br>There is a huge demand for students who are trained  and certified in resources such as Full Stack ,JAVA, Salesforce ,Font-end engineering etc. <br></p>
+                                    <a href="newsAndStories.html" class="ReadMore">Read More &#8811;</a>
+                                </div>
+                            </tr>
+                            <tr>
+                                <div class="article3">
+                                    <img src="csemeet.png" alt='News&Article' height="220" width="400">
+                                    <h4><b>7th May 2021</b></h4>
+                                    <h2><b>Private engineering colleges witness jump in campus placement</b></h2>
+                                    <p><br>There is a huge demand for students who are trained  and certified in resources such as Full Stack ,JAVA, Salesforce ,Font-end engineering etc. <br></p>
+                                    <a href="newsAndStories.html" class="ReadMore">Read More &#8811;</a>
+                                </div>
+                            </tr>
+                        </table>
+
+                        <!-- <div class="article4">
+                            <img src=alumeet.jpg alt='News&Article' height="220" width="400">
+                            <h4><b>Date</b></h4>
+                            <h2><b>Blog Title</b></h2>
+                            <p><br><br>Matteeeeeeeeeeeeeeee
+                                eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+                                eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+                                eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+                                eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee</p>
+                            <a href="" class="ReadMore">Read More &#8811;</a> -->
+                        </div>
+                    </div>
+                </div>
+                <article>
+                    <br><br><br><br><br><br><br><br><br>
+                <div class="mapcomment">
+                    <ul >
+                        <li>
+                            <div class="map" style="display: inline; position: relative;">
+                                <h1> Location </h1>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3702.2834855183582!2d78.59504741479361!3d17.19616318819345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcba659868b4727%3A0xf39a771705e23170!2sCVR%20College%20Of%20Engineering!5e1!3m2!1sen!2sin!4v1649132701857!5m2!1sen!2sin" width="600" height="450" style="border: 5px solid #601c14;border-radius: 30px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="commentbox">
+                                <h1>Alumni Message:</h1>
+                                <form action="html1.html" method="get" target="_self"> 
+                                <h2>Name of Alumni:</h2>
+                                <input type="text" size="30" name="username" placeholder="Full Name"/>
+                                <h2>Batch:</h2>
+                                <input type="number" size="30" min="1995" maxlength="4" name="number" placeholder="Passout year"/>
+                                <h2>Favourite spot in College:</h2>
+                                <input type="text" size="30" name="spot" placeholder="Fav. Spot"/>
+                                <h2>Express you journey with CVR:</h2>
+                                <textarea style="resize:none" rows="5" cols="40"> </textarea><br>
+                                <input type="reset" class="sentbutton" value="Send" onclick="sentAlert()"/>
+                                </form><br><br/>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </article>
+            
+            <footer>
+                <div class="footer1">
+                    <h3 class="foot1"><a href="writeus.html">Write to Us</a></h3>
+                    <ul class="foot2">
+                        <h3>Follow us in</h3>
+                        <li><a href="https://www.instagram.com/cvr_community/?hl=en">Instagram</a></li> |
+                        <li><a href="https://www.facebook.com/cvr.coe/">Facebook</a></li> |
+                        <li><a href="https://in.linkedin.com/school/cvrcoe/">LinkedIn</a></li>
+                    </ul>
+                    <h3 class="foot3"><a href="getInvolved.html">Join the Alumni Association</a></h3>
+                    <a href="collegehtml.html" class="copyright">Copyright © 2022 CVR College of Engineering, All Rights Reserved</a>
+                </div>
+            </footer>
+    </body>
+</html>
+
+

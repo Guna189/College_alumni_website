@@ -1,0 +1,45 @@
+.fortitle h1, .indtitle h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2em;
+    text-align: center;
+
+
+}
+
+.indArticle{
+    width: 50%;
+    border: 5px solid #601c14;
+    border-radius: 40px;
+    margin: auto;
+    margin: 0% 20% 5% 20%;
+    display: inline-flex;
+    padding: 2%;
+    box-shadow: 10px 10px;
+    background-color: #fffdf2;
+}
+
+.forArticle{
+    width: 50%;
+    border: 5px solid #601c14;
+    border-radius: 40px;
+    margin: auto;
+    margin: 0% 20% 2% 20%;
+    display: inline-flex;
+    padding: 2%;
+    box-shadow: 10px 10px;
+    background-color: #fffdf2;
+}
+
+.image{
+    margin: 0% 2%;
+    float: left;
+}
+
+.img1 image{
+    border-radius: 20px;
+}
+.location{
+    text-align: center;
+    margin: auto;
+}

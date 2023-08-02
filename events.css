@@ -1,0 +1,101 @@
+article h1{
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+.Event{
+    border: 5px solid #601c14;
+    border-radius: 40px;
+    margin: 0% 20% 5%;
+    display: inline-flex;
+    padding: 2%;
+    box-shadow: 10px 10px;
+    background-color: #fffdf2;
+}
+
+.heading1{
+    text-decoration: underline;
+    float: left;
+    margin: 0% 20%;
+    padding: 2px;
+}
+
+.img1{
+    margin: 0% 2%;
+    float: left;
+}
+
+.img1 img{
+    border-radius: 20px;
+}
+.descrip{
+    float: left;
+    margin: 0% 2%;
+}
+.descrip a{
+    background-color: #601c14;
+    color: #f0ecd4;
+    font-size: 1.25em;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.descrip a:hover{
+    text-decoration: underline;
+}
+
+.pEvent{
+    border: 5px solid #601c14;
+    border-radius: 40px;
+    margin: 0% 20% 2%;
+    display: inline-flex;
+    padding: 2%;
+    box-shadow: 10px 10px;
+    background-color: #fffdf2;
+}
+
+.heading2{
+    text-decoration: underline;
+    float: left;
+    margin: 0% 20%;
+    padding: 2px;
+}
+
+.pimg1{
+    margin: 0% 2%;
+    float: left;
+}
+
+.pimg1 img{
+    border-radius: 20px;
+}
+.pdescrip{
+    float: left;
+    margin: 0% 2%;
+}
+.pdescrip a{
+    background-color: #601c14;
+    color: #f0ecd4;
+    font-size: 1.25em;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.pdescrip a:hover{
+    text-decoration: underline;
+}
+
+.pastEvent a{
+    margin: 0% 20% 50%;
+    background-color: #601c14;
+    text-align: center;
+    color: #f0ecd4;
+    font-size: 1.25em;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.pastEvent a:hover{
+    text-decoration: underline;
+}

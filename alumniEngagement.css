@@ -1,0 +1,50 @@
+
+.addrbar ul {
+    list-style-type: none;
+    margin: 1%;
+    padding: 5px;
+    overflow: hidden;
+    background-color: #601c14;
+    font-size: 1.2em;
+    border-radius: 5px;
+ }
+  
+ .addrbar li {
+    float: left;
+
+  }
+  
+ .addrbar li a {
+    display: block;
+    color: #f0ecd4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+ .addrbar li a:hover {
+     color: #601c14;
+    background-color: #f0ecd4;
+    border-radius: 15px;
+  }
+
+  .itemsTable{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 2%;
+ }
+
+ .itemsTable table{
+     background-color: aliceblue;
+     width: 80%;
+ }
+ 
+ .BoSTitle h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2em;
+ }

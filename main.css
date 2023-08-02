@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box; /* same dim of web* */
+    max-width: 1920px;
+}
+
+body {
+    font-family: Roboto; /* Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif */
+    background-color: #f0ecd4;
+    width: 100%;
+    margin: 0%;
+}
+
+a {
+    text-decoration: none;
+    color: #f0ecd4;
+}
+
+li {
+    list-style: none;
+}
+
+.logos{
+    display: inline-block;
+    width:100%;
+}
+
+.logo, .logo a{
+    display: inline-flex;
+    float: left;
+    height: 70px;
+}
+
+.logo2{
+    float: left;
+    width: 80%;
+}
+
+.navbar{
+    background-color: #601c14;
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px;
+    background-color: #601c14;
+    color: #f0ecd4;
+    font-size: 1.5em;
+}
+
+/* NAVBAR MENU */
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu a:hover {
+    background-color: #f0ecd4;
+    color: #601c14;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.menu li {
+    padding: 5px 5px;
+}
+   
+/* DROPDOWN MENU */
+.community {
+    position: relative;
+}
+.dropdown {
+    background-color: #601c14;
+    padding: 1em 0;
+    position: absolute; 
+    display: none;
+    border-radius: 10px;
+    /* top: 35px; */
+    color: #f0ecd4;
+    overflow: hidden;
+}
+
+.dropdown li {
+    text-align: center;
+    width: 190px;
+}
+.dropdown a:hover {
+    background-color: #f0ecd4;
+    color: #601c14;
+    border-radius: 10px;
+}
+.community:hover .dropdown {
+    display: block;
+}
+
+footer{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    background-color: #601c14;
+    color: #f0ecd4;
+    overflow: hidden;
+}
+
+.foot1{
+    float: left;
+    margin-top: 3%;
+    width:20%;
+}
+.foot2{
+    float: left;
+    width:50%;
+}
+
+.foot2 li{
+    display: inline;
+}
+
+.foot3{
+    margin-top: 3%;
+    float: left;
+    width:30%;
+}
+
+.copyright{
+    float:left;
+    text-align: center;
+    width: 100%;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+}
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu { 
+        display:none;
+        position: relative;
+        background-color:#601c14;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 8px 0;
+    }
+
+    .menu li:hover {
+        display: block;
+        background-color:#601c14;
+        transition: 0.3s ease;
+    }
+
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+        position: relative;
+    }
+
+    .dropdown {
+        left: 62%;
+        top: 0px;
+        position: absolute;   
+    }
+
+    .dropdown li:hover {
+        background-color: #601c14;
+    }
+}

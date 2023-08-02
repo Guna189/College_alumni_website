@@ -1,0 +1,346 @@
+*{
+    /* font-size: 0em; */
+    max-width: 1920;
+}
+
+
+.stats ul{
+    display:flex;
+    text-indent: 50px;
+}
+
+
+#welcomeMessage h1{
+    font-size: 2em;
+    text-align: center;
+}
+
+#welcomeMessage h2{
+    font-size: 1.4em;
+    text-align: center;
+}
+
+#welcomeMessage p{
+    font-size: 1.25em;
+    /* text-align: center; */
+}
+
+#welcomeMessage a{
+    background-color: #601c14;
+    font-size: 1.5em;
+    border-radius: 15px;
+    padding: 5px;
+    background-color: #601c14;
+    color: #f0ecd4;
+}
+
+#welcomeMessage a:hover{
+    text-decoration: underline;
+    width:100%;
+}
+
+
+#slider{
+    float: right;
+    width: 75%;
+}
+#welcomeMessage{
+
+    margin: 0% 2% 0% 2%;
+    border-radius: 20%;
+    float: left;
+    padding: 30px 10px;
+    width: 25%;
+    border: #601c14;
+    box-shadow: 10px 10px;
+    background-color: #fffdf2;
+}
+
+#slider {
+    position: relative;
+    width: 1024px;
+    height: 480px;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    margin: 10px 20px;
+    }
+    #slider ul {
+    position: relative;
+    list-style: none;
+    height: 100%;
+    width: 10000%;
+    padding: 0;
+    margin: 0;
+    transition: all 750ms ease;
+    left: 0;
+    border-radius: 20px;
+    }
+    #slider ul li {
+    position: relative;
+    height: 100%;
+    
+    float: left;
+    border-radius: 20px;
+    }
+    #slider ul li img{
+    width: 1024px;
+    height: 480px;
+    border-radius: 20px;
+    }
+    
+    #slider #prev, #slider #next {
+    width: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    font-size: 2rem;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    /* transform: translateY(-50%); */
+    transition: all 150ms ease;
+    }
+    #slider #prev:hover, #slider #next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-shadow: 0;
+    }
+    #slider #prev {
+    left: 10px;
+    }
+    #slider #next {
+    right: 10px;
+    }
+    
+.welcomeBox{
+    display: inline-flex;
+    text-align: center;
+    width:100%;
+    margin: 1%;
+}
+
+.welcomeBox h1{
+    font-family:Lato,sans-serif;
+}
+
+#eventDate{
+    float: left;
+    height:40px;
+}
+
+#eventDesc{
+    text-indent: 50px;
+    width: 60%;
+    display: inline-block;
+}
+
+#eventButton a{
+    position: relative;
+    top: 50%;
+    font-size: 1.5em;
+    padding: 10px;
+    background-color: #601c14;
+    color: #f0ecd4;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.event{
+    margin: 2%;
+    border: 5px solid #601c14;
+    padding: 10px;
+    border-radius: 15px;
+    display: flex;
+    box-shadow: 10px 10px;
+    background-color: #fffdf2;
+}
+
+#eventButton a:hover{
+    text-decoration: underline;
+    border-radius: 20px;
+}
+
+.viewAll a{
+    background-color: #601c14;
+    color: #f0ecd4;
+    font-size: 1.25em;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.viewAll a:hover{
+    text-decoration: underline;
+}
+
+.upcomingEvents{
+    text-align: center;
+    margin: 10px;
+    width:100%;
+}
+
+.upcomingEvents h1{
+    text-decoration: underline;
+}
+
+ .illustrious{
+     text-align: center;
+    padding: 10px;
+    width:100%;
+} 
+.illustrious h1{
+    text-decoration: underline;
+}
+/* .illustrious .alumniList div{
+    display: flex;
+    flex-flow: row;
+    padding: 5px;
+} */
+
+/* .illustrious .alumniList .illumi img{
+    padding: 5px;
+    border-radius: 50%;
+    border: 5px solid #601c14;
+} */
+
+.illumi1,.illumi2,.illumi3,.illumi4{
+    width: 30%;
+    padding: 5px;
+    border: 5px solid #601c14;
+    margin: 2%;
+    border-radius: 20px;
+    box-shadow: 10px 10px;
+    background-color: #fffdf2;
+}
+
+.illumi1 img,.illumi2 img,.illumi3 img,.illumi4 img{
+    border-radius: 40px;
+}
+
+.viewAlumni a{
+    background-color: #601c14;
+    color: #f0ecd4;
+    font-size: 1.25em;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 1%;
+}
+
+.viewAlumni a:hover{
+    text-decoration: underline;
+}
+
+.illumi1{
+    float: left;
+    width: 20%;
+}
+
+.illumi2{
+    float: left;
+    width: 20%;
+}
+.illumi3{
+    float: left;
+    width: 20%;
+}
+
+.illumi4{
+    float: left;
+    width: 20%;
+}
+
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    }
+    
+.menu {
+position: sticky;
+} */
+
+.news h1{
+    text-decoration: underline;
+}
+
+.news{
+    padding: 5px;
+    width:100%;
+    text-align: center;
+}
+
+.newsArticles{
+    text-align: center;
+}
+
+.newsArticles img{
+    border-radius: 20px;
+    /* padding: 0% 15%; */
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.article1,.article2,.article3,.article4{
+
+    padding: 10px;
+    border: 5px solid #601c14;
+    margin: 1%;
+    width: 40px;
+    border-radius: 20px;
+    box-shadow: 10px 10px;
+    background-color: #fffdf2;
+}
+
+.ReadMore{
+    background-color: #601c14;
+    color: #f0ecd4;
+    font-size: 1.25em;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 1%;
+}
+
+.ReadMore:hover{
+    text-decoration: underline;
+}
+
+.article1{
+    float: left;
+    margin: 1%;
+    width: 30%;
+}
+
+.article2{
+    float: left;
+    margin: 1%;
+    width: 30%;
+}
+.article3{
+    float: left;
+    margin: 1%;
+    width: 30%;
+}
+
+/* .article4{
+    float: left;
+    width: 45%;
+} */
+.map h1,.commentbox h1{
+    text-decoration: underline;
+    font-size: 2em;
+}
+
+.map,.commentbox{
+    float: left;
+    display: block;
+    padding: 5%;
+    }
+    
+    .mapcomment ul {
+    list-style-type: none;
+    }
+
+.commentbox{
+    font-family: cursive;
+}

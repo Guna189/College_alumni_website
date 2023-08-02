@@ -1,0 +1,47 @@
+.heading h1, .heading2 h1{
+    font-size: 1.5em;
+    text-decoration: underline;
+    text-align: center;
+
+}
+
+.achievements{
+    border: 5px solid #601c14;
+    border-radius: 20px;
+    margin: 1% 5%;
+    text-align: center;
+}
+
+.achievements img{
+    border-radius: 20px;
+
+}
+
+.alumniAchievements{
+    width: 75%;
+    margin: auto;
+}
+
+.articlebox{
+    width: 60%;
+    border: 5px solid #601c14;
+    border-radius: 40px;
+    margin: 0% 20% 1% 20%;
+    display: inline-flex;
+    padding: 2%;
+    box-shadow: 10px 10px;
+    background-color: #fffdf2;
+}
+
+.pic{
+    margin: 0% 2%;
+    float: left;
+}
+
+.pic img{
+    border-radius: 20px;
+}
+.desc{
+    float: left;
+    margin: 0% 2%;
+}
