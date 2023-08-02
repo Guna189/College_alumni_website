@@ -26,5 +26,5 @@ To deploy the College Alumni Website locally, follow these steps:
 ![image](https://github.com/Guna189/College_alumni_website/assets/112332925/ae857e17-86a6-4944-96fd-7c395dad24bf)
 
 ## Contributed by
-### E Gunavardhan github.com/Guna189
+### E Gunavardhan https://github.com/Guna189
 ### K Shravani
